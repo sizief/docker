@@ -1,24 +1,9 @@
-# README
+## Ruby On Rails 5.2.2/Ruby 2.5.3/Bundle 2.0.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Clone this repo and then
 
-Things you may want to cover:
 
-* Ruby version
+`docker build -t awesome .`
 
-* System dependencies
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+`docker run -p 3000:3000  awesome:latest` 
