@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
   def index
-    @name = ENV['NAME']
+    @name = 'ali on controller YAY!' #ENV['CREATOR']
   end
 end

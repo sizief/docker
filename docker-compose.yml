@@ -1,0 +1,22 @@
+db:
+  image: postgres:9.4.5
+  volumes:
+    - postgresdata_shopshop:/var/lib/postgresql/data
+  ports:
+    - "5432"
+  env_file: .env
+
+app:
+  build: .
+  env_file: .env
+  environment:
+    RAILS_ENV: $RAILS_ENV
+    ENTRYPOINT: app
+  links:
+    - db:db
+  ports:
+    - "3000:3000"
+  volumes:
+    - .:/var/www/shopshop
+  tty: true
+  stdin_open: true
