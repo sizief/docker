@@ -9,3 +9,10 @@
 - `docker ps`
 - `docker run -it {app container name} bash`
 - `psql -U postgres`
+
+
+### Seed data
+- `bundle exec rake db:seed`
+- `bundle exec rake spree_sample:load`
+
+
