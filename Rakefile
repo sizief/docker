@@ -4,3 +4,9 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+desc "run services"
+task :up  do
+  sh "rm -f tmp/pids/server.pid"
+  sh "docker-compose up"
+end
