@@ -20,6 +20,7 @@ services:
     environment:
       RAILS_ENV: $RAILS_ENV
       ENTRYPOINT: app
+    user: "1000"
     depends_on:
       db:
         condition: service_healthy

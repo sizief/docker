@@ -10,3 +10,4 @@ task :up  do
   sh "rm -f tmp/pids/server.pid"
   sh "docker-compose up"
 end
+
