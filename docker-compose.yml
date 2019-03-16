@@ -3,7 +3,7 @@ services:
   db:
     image: postgres:9.4.5
     volumes:
-      - ./../shopshop_data/spree:/var/lib/postgresql/data
+      - ./../shopshop_data/spree/development:/var/lib/postgresql/data
     ports:
       - "5432"
     env_file: .env
