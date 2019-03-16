@@ -12,6 +12,12 @@ task :up  do
 end
 
 desc "build services"
-task :b  do
+task :build  do
   sh "docker-compose build"
+end
+
+desc "build services"
+task :restart  do
+  sh "docker-compose down"
+  sh "rake up"
 end

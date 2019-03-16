@@ -11,7 +11,8 @@
 - `psql -U postgres`
 
 
-### Seed data
+### After install
+- `rake assets:precompile:primary`
 - `docker-compose run app bundle exec rake db:seed`
 - `docker-compose run app bundle exec rake spree_sample:load`
 
