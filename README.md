@@ -12,7 +12,7 @@
 
 
 ### Seed data
-- `bundle exec rake db:seed`
-- `bundle exec rake spree_sample:load`
+- `docker-compose run app bundle exec rake db:seed`
+- `docker-compose run app bundle exec rake spree_sample:load`
 
 

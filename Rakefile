@@ -11,3 +11,7 @@ task :up  do
   sh "docker-compose up"
 end
 
+desc "build services"
+task :b  do
+  sh "docker-compose build"
+end
