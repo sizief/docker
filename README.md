@@ -3,7 +3,7 @@
  - `git clone {this repo} {app_dir}`
  - Change the values in .env file
  - `cd {app_dir} && docker-compose build`
- - `docker-compose up`
+ - `rake up` or `docker-compose up`
 
 ### Access to data
 - `docker ps`
